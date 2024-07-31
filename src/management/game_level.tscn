@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://84441sb5jjif"]
+
+[ext_resource type="PackedScene" uid="uid://d0610y1rmt2tf" path="res://src/terrains/terrain_manager.tscn" id="1_6qibq"]
+[ext_resource type="PackedScene" uid="uid://bqlv22u21e8pk" path="res://src/characters/pawn.tscn" id="2_x41e2"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="TerrainManager" parent="." instance=ExtResource("1_6qibq")]
+
+[node name="Pawn" parent="TerrainManager" instance=ExtResource("2_x41e2")]
+position = Vector2(450, 138)
